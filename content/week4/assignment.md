@@ -24,7 +24,7 @@ criteria:
 tips:
   - Spreek vooraf af wie eigenaar is van de repository die jullie voor de inleveropdracht gebruiken.
   - Vergeet niet te pullen voordat je begint met werken — zo voorkom je onnodige merge conflicts.
-  - Bij het oplossen van een merge conflict: verwijder altijd alle drie de markerregels (<<<<<<<, =======, >>>>>>>).
+  - "Bij het oplossen van een merge conflict: verwijder altijd alle drie de markerregels (<<<<<<<, =======, >>>>>>>)."
 ---
 
 Deze week heb je geleerd hoe je samenwerkt aan één repository. Je weet hoe je een collaborator uitnodigt, hoe de samenwerkworkflow werkt en hoe je een merge conflict oplost.
