@@ -3,6 +3,15 @@ week: 1
 title: Meetmoment Week 1 — Bestanden en mappen
 passScore: 70
 questions:
+  - id: w1q0
+    question: Wat is een bestand?
+    options:
+      - Een folder waarin je andere bestanden bewaart
+      - Een verzameling gegevens die je op een schijf kunt opslaan, zoals een document, foto of video
+      - Een verbinding met het internet
+      - Een programma om bestanden te zoeken
+    correct: 1
+    explanation: Een bestand is een verzameling gegevens — denk aan een document, een foto of een stukje code — die je kunt opslaan en later weer openen.
   - id: w1q1
     question: Wat is een bestandsextensie?
     options:
