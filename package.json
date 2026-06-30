@@ -9,6 +9,7 @@
     "preview": "e-module-builder preview"
   },
   "devDependencies": {
-    "@curio-sd/e-module-builder": "^0.6.1"
+    "@curio-sd/e-module-builder": "^0.6.1",
+    "e-module-builder": "github:curio-team/e-module-builder"
   }
 }

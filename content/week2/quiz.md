@@ -1,97 +1,78 @@
 ---
 week: 2
-title: Tussentoets Week 2 — Rijen, kolommen en gebieden
+title: Meetmoment Week 2 — Git en GitHub
 passScore: 70
 questions:
   - id: w2q1
-    question: Wat doet grid-template-rows?
+    question: Waarvoor gebruiken developers Git?
     options:
-      - Bepaalt kolombreedtes
-      - Bepaalt de hoogte van rijen
-      - Voegt rijen toe aan HTML
-      - Verbergt rijen
+      - Om afbeeldingen te bewerken
+      - Om de verschillende versies van hun code te beheren
+      - Om e-mails te versturen
+      - Om websites te hosten
     correct: 1
-    explanation: grid-template-rows definieert rijhoogtes, net als columns voor breedtes.
+    explanation: Met Git beheer je versies van je code en kun je terugkijken naar eerdere versies.
   - id: w2q2
-    question: Wat is grid-template-areas?
+    question: Wat is GitHub?
     options:
-      - Een JavaScript functie
-      - Een visuele manier om gebieden namen te geven
-      - Een lijst van HTML-klassen
-      - Een media query
+      - Een programmeertaal
+      - Een plaats op het internet om code op te slaan met Git
+      - Een tekstverwerker
+      - Een bestandsextensie
     correct: 1
-    explanation: Je tekent je layout met benoemde strings per rij.
+    explanation: GitHub is een online plek waar je je code (in repositories) bewaart en deelt.
   - id: w2q3
-    question: Hoe laat je een item over 2 kolommen spannen?
+    question: Wat is een repository?
     options:
-      - "width: 200%"
-      - "grid-column: 1 / 3 of via grid-template-areas"
-      - "float: left"
-      - "display: block"
-    correct: 1
-    explanation: grid-column of een area die twee kolomnamen beslaat.
+      - Een opslagplaats voor code
+      - Een soort bestandsextensie
+      - Een Git-tool
+      - Een e-mailadres
+    correct: 0
+    explanation: Repository betekent letterlijk 'opslagplaats' — een plek voor je code.
   - id: w2q4
-    question: Welk item spant over 2 kolommen in dit grid?
-    preview:
-      css: '.demo { display: grid; grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "wide wide side"; gap: 4px; } .wide { grid-area:
-        wide; background: #52525b; padding: 14px; color: white; text-align:
-        center; } .side { grid-area: side; background: #a1a1aa; padding: 14px;
-        color: white; text-align: center; }'
-      html: <div class="demo"><div class="wide">Breed</div><div
-        class="side">Smal</div></div>
+    question: Wat is een fork van een repository?
     options:
-      - Het smalle item
-      - Het brede item (wide)
-      - Beide
-      - Geen
+      - Een back-up van je laptop
+      - Een eigen kopie van een bestaande repository waarop je zelf kunt doorwerken
+      - Het verwijderen van een repository
+      - Een commit met een titel
     correct: 1
-    explanation: '"wide wide side" laat wide twee kolommen beslaan.'
+    explanation: Een fork is jouw eigen kopie; je kunt erop doorwerken zonder het origineel te veranderen.
   - id: w2q5
-    question: "Wat doet grid-area: header op een element?"
+    question: Wat betekent het om een repository te clonen?
     options:
-      - Maakt een header-tag aan
-      - Plaatst het item in het gebied 'header'
-      - Stelt hoogte in
-      - Verbergt het item
+      - De repository verwijderen
+      - De code van een repository naar je eigen laptop kopiëren
+      - De repository openbaar maken
+      - Een nieuwe extensie toevoegen
     correct: 1
-    explanation: grid-area koppelt het item aan een naam uit grid-template-areas.
+    explanation: Clonen kopieert de online code naar een folder op je eigen laptop.
   - id: w2q6
-    question: Welke grid-template-areas hoort bij een header over de volle breedte
-      (2 kolommen)?
-    preview:
-      css: '.demo { display: grid; grid-template-columns: 1fr 1fr;
-        grid-template-areas: "head head" "a b"; gap: 4px; } .head { grid-area:
-        head; background: #3f3f46; color: white; padding: 10px; text-align:
-        center; } .a { grid-area: a; background: #71717a; color: white; padding:
-        10px; text-align: center; } .b { grid-area: b; background: #a1a1aa;
-        color: white; padding: 10px; text-align: center; }'
-      html: <div class="demo"><div class="head">H</div><div class="a">A</div><div
-        class="b">B</div></div>
+    question: Wat heb je nodig om een repository te clonen?
     options:
-      - '"head a" "head b"'
-      - '"head head" "a b"'
-      - '"a head" "b head"'
-      - '"head" "a" "b"'
+      - Alleen een e-mailadres
+      - De remote repository (URL) én een locatie op je laptop
+      - Een betaald GitHub-account
+      - Een nieuw besturingssysteem
     correct: 1
-    explanation: 'De header moet beide kolommen beslaan: "head head".'
+    explanation: Je vult de URL van de online repository in én kiest een (lege) folder op je laptop.
   - id: w2q7
-    question: "Wat betekent grid-column: 1 / -1?"
+    question: Waarom raden we aan een Git-tool (zoals GitHub Desktop) te gebruiken?
     options:
-      - Alleen de eerste kolom
-      - Van de eerste tot de laatste kolomlijn
-      - Verberg het element
-      - Eén pixel breed
+      - Omdat de command prompt niet werkt met Git
+      - Omdat je dan niet veel commando's hoeft te onthouden
+      - Omdat het verplicht is van GitHub
+      - Omdat code dan sneller werkt
     correct: 1
-    explanation: -1 is altijd de laatste gridlijn — ideaal voor full-width headers.
+    explanation: Een tool met knoppen is voor beginners makkelijker dan alle commando's onthouden.
   - id: w2q8
-    question: "In een nieuws-layout: hoe geef je aan dat artikel D twee kolommen
-      breed is?"
+    question: Waar moet de folder aan voldoen waar je naartoe cloned?
     options:
-      - '"d e e" op de laatste rij'
-      - '"d d e" op de laatste rij in grid-template-areas'
-      - "width: 200% op D"
-      - "grid-row: 2"
+      - Hij moet vol met bestanden staan
+      - Hij moet leeg zijn
+      - Hij moet op OneDrive staan
+      - Hij moet 'git' heten
     correct: 1
-    explanation: 'Herhaal de area-naam d op twee kolommen: "d d e".'
+    explanation: De doelmap voor een clone moet leeg zijn.
 ---

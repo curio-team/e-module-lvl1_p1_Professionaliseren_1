@@ -1,146 +1,114 @@
 ---
 week: 1
-title: De grote bouwstenen
-goal: je begrijpt wat CSS Grid is, wanneer je het gebruikt, en kunt een eenvoudige pagina-indeling maken
+title: Bestanden, folders en een mappenstructuur
+goal: je weet wat bestanden en folders zijn, en je hebt een duidelijke mappenstructuur voor je schoolwerk gemaakt
 accent: indigo
+summary: De basis van versiebeheer — je werk netjes organiseren zodat je niets kwijtraakt.
 leeruitkomsten:
-  - "Ik weet wat display: grid doet"
-  - Ik kan kolommen definiëren met grid-template-columns
-  - Ik gebruik gap voor ruimte tussen grid-items
-  - Ik kan een complete pagina-layout bouwen (header, nav, main, sidebar, footer)
+  - Ik weet wat bestanden en bestandsextensies zijn
+  - Ik weet wat folders (mappen) zijn
+  - Ik heb een mappenstructuur gemaakt voor mijn schoolwerk
+  - Ik weet wat OneDrive is en hoe ik het gebruik
+  - Ik weet waar ik welke bestanden opsla zodat ik ze niet kwijtraak
 ---
 
-## Welk probleem lossen we op?
+## Waar gaat deze week over?
 
-Vroeger bouwden developers pagina's met **tables**, **floats** of **absolute positionering**. Dat werkte, maar was fragiel: één element verschuiven en de hele layout brak.
+Je gaat de komende jaren met heel veel bestanden werken: terwijl je aan het coderen bent, maar ook gewoon voor je schoolwerk. Een duidelijke **mappenstructuur** helpt je om gemaakt werk niet kwijt te raken en maakt het makkelijker om back-ups te maken.
 
-Moderne websites hebben een **voorspelbare structuur**: header bovenaan, menu, hoofdinhoud naast een sidebar, footer onderaan. CSS Grid is gemaakt om precies dit soort **tweedimensionale layouts** (rijen én kolommen) eenvoudig en onderhoudbaar te maken.
+Voor de lessen van de volgende weken is het belangrijk dat je vlot met bestanden en folders kunt werken. Daarom starten we daarmee.
 
 <x-callout>
 
-**Onthoud:** Grid is voor de *grote indeling* van je pagina. Niet voor elk klein detail — daarvoor heb je Flexbox (zie hieronder).
+**Aan het einde van deze week** weet je wat bestanden en bestandsextensies zijn, wat folders zijn, heb je een eigen mappenstructuur voor je schoolwerk gemaakt, en weet je hoe je OneDrive gebruikt om je werk veilig te bewaren.
 
 </x-callout>
 
-## Wat is CSS Grid?
+## 1.1 Bestanden
 
-CSS Grid is een layout-systeem waarmee je een **raster** definieert op een container. Je tekent onzichtbare lijnen (kolommen en rijen) en plaatst elementen in de cellen — of laat ze over meerdere cellen spannen.
+Een bestand is 'iets' op je laptop, computer of MacBook. Voorbeelden zijn een Word-document, een game-*executable* waarmee je een spel start, of een foto.
 
-```css
-.pagina {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 16px;
-}
-```
+Als jij straks als software developer websites maakt, werk je ook met bestanden. Een website bestaat namelijk uit verschillende soorten bestanden die naar elkaar verwijzen.
 
-Met drie regels CSS heb je al twee kolommen en ruimte ertussen.
+![Voorbeeld van een simpele website](images/website-bestanden.png)
 
-## Flexbox vs Grid — wanneer wat?
+## 1.2 Bestandsextensies
 
-Beide zijn modern en worden vaak **gecombineerd**. Het verschil zit in de dimensie:
+Elk bestand heeft een **extensie**. Dankzij die extensie begrijpen apparaten wat voor soort bestand iets is. De extensie staat achter de punt in de bestandsnaam, bijvoorbeeld `index.html` of `logo.png`.
 
-<x-compare>
-<x-compare-item title="Flexbox — één richting">
+![Voorbeeld van een simpele website met bestandsextensies](images/website-bestandextensies.png)
 
-Items staan in een **rij** of **kolom**. Ideaal voor componenten: een navigatiebalk, knoppen naast elkaar, een kaart met icoon + tekst.
+Een paar veelvoorkomende extensies:
 
-```css
-.nav {
-  display: flex;
-  gap: 1rem;
-}
-```
+| Extensie | Wat betekent dit |
+| --- | --- |
+| `.exe` | Een uitvoerbaar programma (bijvoorbeeld om een spel of app te starten). |
+| `.docx` | Een Word-document. |
+| `.html` | Een webpagina. |
+| `.css` | De opmaak (stijl) van een webpagina. |
+| `.png` / `.jpg` | Een afbeelding. |
 
-**Voorbeeld:** menu-items horizontaal naast elkaar.
+## 1.3 Bestandsextensies tonen
 
-</x-compare-item>
-<x-compare-item title="Grid — twee richtingen">
+Standaard verbergt Windows de extensies. Voor software developers is het juist handig om ze te zien — dan weet je precies wat voor soort bestand iets is.
 
-Items staan in **rijen én kolommen** tegelijk. Ideaal voor pagina-layouts: header over de volle breedte, sidebar links, content rechts.
+Open je **File Explorer** en zet onder de tab **View** de optie **File name extensions** aan.
 
-```css
-.pagina {
-  display: grid;
-  grid-template-columns: 1fr 250px;
-}
-```
+![Bestandsextensies aanzetten in de File Explorer](images/extensies-aanzetten.png)
 
-**Voorbeeld:** hele website-indeling in één grid.
+## 1.4 Mappen en een mappenstructuur
 
-</x-compare-item>
-</x-compare>
+Op je laptop werk je met verschillende **mappen** (ook wel *folders* genoemd) waarin je bestanden zet. Je kunt ook mappen aanmaken binnen andere mappen. Die opbouw noemen we een **mappenstructuur**.
 
-| Situatie | Gebruik |
-|---------|---------|
-| Navigatie met 5 links | Flexbox |
-| Hele pagina met header/footer | Grid |
-| Knoppen centreren in een kaart | Flexbox |
-| Fotomatrix / productoverzicht | Grid |
+Terwijl je software ontwikkelt is het belangrijk dat je weet op welke plaats bestanden opgeslagen worden, en in welke folder dat gebeurt.
 
-## Container en items
+![Voorbeeld van een folder met daarin andere folders](images/mappenstructuur-voorbeeld.png)
 
-Het element met `display: grid` heet de **grid container**. Alleen de **directe kinderen** worden automatisch grid items.
+![Schematische weergave van dezelfde mappenstructuur](images/mappenstructuur-schema.png)
 
-```html
-<div class="pagina">        <!-- GRID CONTAINER -->
-  <header>Logo</header>       <!-- grid item -->
-  <nav>Menu</nav>             <!-- grid item -->
-  <main>Inhoud</main>         <!-- grid item -->
-  <aside>Sidebar</aside>      <!-- grid item -->
-  <footer>Contact</footer>    <!-- grid item -->
-</div>
-```
+## 1.5 Nieuwe mappen maken
+
+Maak een nieuwe folder aan op je `C:`- of `D:`-schijf. Selecteer eerst de schijf in je File Explorer.
+
+![Een schijf selecteren in de File Explorer](images/schijf-selecteren.png)
+
+Klik daarna met de **rechtermuisknop** in de File Explorer om een nieuwe folder aan te maken.
+
+![Een nieuwe folder aanmaken](images/nieuwe-folder.png)
+
+## 1.6 OneDrive
+
+Op Windows-laptops heb je toegang tot **OneDrive**. OneDrive is een plaats om bestanden en folders op het internet op te slaan.
+
+We raden je op school aan om OneDrive te gebruiken, zodat je gemaakte bestanden nooit kwijtraken — ook niet als je laptop kapotgaat. Je bestanden staan dan namelijk nog steeds op het internet.
+
+Je kunt je OneDrive selecteren door deze aan te klikken in je File Explorer. Let op dat je ingelogd moet zijn met een Microsoft-account.
+
+![OneDrive selecteren in de File Explorer](images/onedrive-selecteren.png)
+
+## 1.7 Folders en bestanden tijdens je schooltijd
+
+Terwijl je de opleiding software developer volgt, gaan je docenten ervan uit dat je bestanden zoals Word-documenten op je OneDrive opslaat, zodat je ze niet kwijtraakt.
 
 <x-callout type="warning">
-Let op: een `div` *binnen* main is géén grid item — alleen directe kinderen van de container.
+
+**Let op:** voor **code** geldt het tegenovergestelde. Code sla je juist *niet* op via OneDrive — sommige applicaties werken dan namelijk niet goed. Voor het opslaan van code gebruiken we als developers een techniek die **Git** heet. Daarover leer je vanaf week 2 meer.
+
 </x-callout>
 
-## Belangrijke properties
+## 1.8 Onthoud voor nu het volgende
 
-**`display: grid`** — Zet het element aan als grid container. Zonder deze regel doen de andere grid-properties niets.
+<x-card title="De twee vuistregels van deze week">
 
-**`grid-template-columns`** — Bepaalt hoeveel kolommen en hoe breed. `1fr 200px` = één flexibele kolom + één vaste kolom van 200px. `fr` = fraction, een deel van de vrije ruimte.
-
-**`grid-template-rows`** — Zelfde als kolommen, maar voor rijhoogtes. Vaak hoef je dit niet — rijen passen zich aan de inhoud aan.
-
-**`gap`** — Ruimte tussen rijen en kolommen. Vervangt oude hacks met margins. `gap: 16px` of `row-gap` / `column-gap` apart.
-
-## Voorbeeld: simpele pagina-layout
-
-```
-+----------------+
-| Header         |
-+----------------+
-| Nav            |
-+------+---------+
-| Main | Sidebar |
-+------+---------+
-| Footer         |
-+----------------+
-```
-
-```css
-.pagina {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 8px;
-  min-height: 100vh;
-}
-```
-
-In week 2 leer je met `grid-template-areas` elk onderdeel exact op de juiste plek zetten.
-
-<x-card title="Wat je níet moet doen">
-
-- Geen `float: left` voor pagina-layout
-- Geen `position: absolute` om blokken naast elkaar te zetten
-- Geen tables voor layout (alleen voor echte tabellen met data)
+- Sla **code** niet op via OneDrive.
+- Sla **andere bestanden** (zoals documenten) juist wél op via OneDrive.
 
 </x-card>
 
+Volgende week leer je hoe je je code op de juiste manier opslaat met Git.
+
 <x-nav label="Klaar met de theorie?">
 [Oefeningen](/pages/week1-oefeningen.html)
-[Toets](/pages/week1-toets.html)
-[Week 2](/pages/week2-theorie.html)
+[Meetmoment](/pages/week1-meetmoment.html)
+[Inleveropdracht](/pages/week1-inleveropdracht.html)
 </x-nav>

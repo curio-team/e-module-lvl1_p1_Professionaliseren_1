@@ -1,38 +1,31 @@
 ---
 week: 2
-title: De Wijkkrant — nieuws op het net
+title: Je eerste fork en clone
 subtitle: Inleveropdracht Week 2
-client: De Wijkkrant Delfshaven
-maxPoints: 12
+maxPoints: 10
 deliverables:
-  - index.html met alle artikel-blokken
-  - styles.css met grid-template-areas en grid-area per item
-  - Screenshot van de layout
+  - Een screenshot van je fork op GitHub (met jouw gebruikersnaam in de repositorynaam)
+  - Een screenshot van de gecloonde folder op je laptop
+  - Een screenshot van de geopende index.html in je browser
 criteria:
   - id: w2h1
-    text: grid-template-areas is gebruikt op de container
+    text: Git is geïnstalleerd en er is een werkend GitHub-account
     points: 2
   - id: w2h2
-    text: Header en menu spannen over de volle breedte
-    points: 2
-  - id: w2h3
-    text: Artikelen A, B en C staan op één rij
-    points: 2
-  - id: w2h4
-    text: Artikel D spant over twee kolommen
+    text: Er is een fork gemaakt van de voorbeeldrepository
     points: 3
-  - id: w2h5
-    text: Elk element heeft de juiste grid-area
+  - id: w2h3
+    text: De fork is succesvol gecloond naar een nette locatie op de laptop
+    points: 3
+  - id: w2h4
+    text: De index.html opent en toont de website in de browser
     points: 2
-  - id: w2h6
-    text: Layout is visueel herkenbaar als een nieuwswebsite
-    points: 1
 tips:
-  - 'Teken eerst je areas op papier: "header header header" enz.'
-  - Gebruik verschillende achtergrondkleuren per artikel om te controleren.
-  - Het laatste rij-template moet "d d e" zijn, niet drie keer hetzelfde.
+  - Zet de gecloonde folder op een logische plek in je mappenstructuur uit week 1.
+  - Lukt het clonen niet? Controleer of je de juiste repository-URL gebruikt en of de doelmap leeg is.
+  - Vraag je docent om hulp als Git niet werkt — dat is belangrijk voor de rest van je opleiding.
 ---
 
-De Wijkkrant is een gratis buurtkrant die nu ook online wil. Redacteur Pieter wil dat het artikel over het buurtfeest extra groot wordt weergegeven — het moet over twee kolommen spannen, net als in de papieren versie. Jij ontwerpt de grid-layout met grid-template-areas.
+Deze week heb je kennisgemaakt met Git en GitHub. Nu laat je zien dat je een repository kunt forken en clonen. Dit is de basis waarmee developers samen aan code werken.
 
-Maak een nieuws-pagina met: header (logo + titel), menubalk, drie kleine artikelen (A, B, C) op één rij, en daaronder een groot artikel (D) dat twee kolommen breed is naast een kleiner artikel (E).
+Maak een fork van de repository [Professionaliseren_M1_Eerste_repository](https://github.com/curio-lesmateriaal/Professionaliseren_M1_Eerste_repository), clone die fork naar je laptop, en open de `index.html` in je browser. Maak hier screenshots van. Lever je werk in via **Itslearning**, waar je docent het nakijkt en je feedback geeft.

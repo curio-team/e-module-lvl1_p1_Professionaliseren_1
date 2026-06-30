@@ -1,15 +1,17 @@
 ---
-name: CSS Grid
-subtitle: E-module
-youtube: https://www.youtube.com/watch?v=jV8B24rSN5o
-weeks: 4
+name: Versiebeheer
+subtitle: Professionaliseren — Unit 1
+weeks: 3
 language: nl
-description: Leer in 4 weken professionele pagina-indelingen bouwen — van de
-  eerste kolommen tot een complete website.
-logoAlt: Schaalbaar
-exerciseMode: interactive
+exerciseMode: external
+description: Leer hoe software developers hun bestanden organiseren en de
+  verschillende versies van hun code beheren — van een nette mappenstructuur tot
+  werken met Git en GitHub.
+logoAlt: Versiebeheer
 algemeen:
-  - Ik kan het verschil uitleggen tussen Flexbox en Grid
-  - Ik weet wat een grid container en grid item is
-  - Ik gebruik geen floats of positionering voor pagina-layout
+  - Ik kan een duidelijke mappenstructuur maken voor mijn schoolwerk
+  - Ik weet wat bestanden, bestandsextensies en folders zijn
+  - Ik weet wat Git en GitHub zijn en waarom developers ze gebruiken
+  - Ik kan een repository maken, clonen, committen en pushen
+  - Ik geef mijn commits logische, beschrijvende titels
 ---

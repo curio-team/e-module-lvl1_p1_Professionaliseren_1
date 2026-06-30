@@ -1,43 +1,32 @@
 ---
 week: 4
-title: Eindopdracht — jouw eigen case
+title: Samenwerken aan de muziekbibliotheek
 subtitle: Inleveropdracht Week 4
-client: Vrij te kiezen
-maxPoints: 14
+maxPoints: 10
 deliverables:
-  - Complete HTML + CSS bestanden
-  - Korte toelichting (tekstbestand of in de pagina zelf)
-  - Screenshot desktop + mobiel
-  - "Optioneel: hover-effecten of donkere modus"
+  - De URL van de gedeelde muziekbibliotheek-repository op GitHub
+  - Een screenshot van de collaborators-pagina (Settings → Collaborators) waarop beide namen zichtbaar zijn
+  - Een screenshot van de commitgeschiedenis waarop commits van twee verschillende gebruikers zichtbaar zijn
+  - Een screenshot van de commit "merge conflict opgelost" (of de commit details waaruit de oplossing blijkt)
 criteria:
   - id: w4h1
-    text: Complete pagina-layout met CSS Grid (geen floats)
-    points: 3
-  - id: w4h2
-    text: Minstens één techniek uit week 2 (areas, spanning of grid-column)
+    text: Een klasgenoot is correct uitgenodigd en heeft de uitnodiging geaccepteerd
     points: 2
+  - id: w4h2
+    text: Beide studenten hebben minstens één commit gemaakt met een logische, beschrijvende titel
+    points: 3
   - id: w4h3
-    text: "Responsive: layout werkt op desktop én mobiel"
+    text: Er is een merge conflict opgetreden en correct opgelost (commit "merge conflict opgelost" zichtbaar)
     points: 3
   - id: w4h4
-    text: Grid en Flexbox zijn slim gecombineerd waar nodig
+    text: De definitieve code staat gepusht en is zichtbaar op GitHub
     points: 2
-  - id: w4h5
-    text: Visueel aantrekkelijk en professioneel ogend
-    points: 2
-  - id: w4h6
-    text: Toelichting aanwezig met uitleg van je keuzes
-    points: 2
-  - id: w4h7
-    text: "Optioneel: hover-effecten of dark mode (+1 bonuspunt)"
-    points: 1
-    optional: true
 tips:
-  - Kijk terug naar het Dashboard- of Portfolio-voorbeeld in de module.
-  - Begin met grid-template-areas voor het grote plaatje.
-  - Lever netjes in via het platform dat je docent aangeeft.
+  - Spreek vooraf af wie eigenaar is van de repository die jullie voor de inleveropdracht gebruiken.
+  - Vergeet niet te pullen voordat je begint met werken — zo voorkom je onnodige merge conflicts.
+  - Bij het oplossen van een merge conflict: verwijder altijd alle drie de markerregels (<<<<<<<, =======, >>>>>>>).
 ---
 
-Het is tijd om alles samen te brengen. Kies één van twee opdrachten: bouw een dashboard voor een fictieve app (bijv. fitness, weer, verkoop) óf een portfolio-pagina voor een creatief persoon. De layout moet eruitzien als een echte website — niet als een oefening.
+Deze week heb je geleerd hoe je samenwerkt aan één repository. Je weet hoe je een collaborator uitnodigt, hoe de samenwerkworkflow werkt en hoe je een merge conflict oplost.
 
-Lever een afgerond project in met een complete grid-layout, responsive ontwerp, en een korte schriftelijke toelichting (5–10 zinnen) waarin je uitlegt welke grid-technieken je hebt gebruikt en waarom.
+Werk samen met je klasgenoot aan de `muziekbibliotheek`-repository. Voeg elkaar toe als collaborator, laat allebei minstens één commit zien en los gezamenlijk een merge conflict op. Lever je screenshots en de repository-URL in via **Itslearning**.

@@ -1,154 +1,97 @@
 ---
-title: "Toets Theorie — CSS Grid"
+title: Meetmoment Theorie — Versiebeheer
+navLabel: Meetmoment Theorie
+description: Meerkeuzevragen over de hele module. Minimaal 70% om te slagen.
 passScore: 70
 questions:
   - id: t1
-    question: Wat is een grid container?
+    question: Wat is een bestandsextensie?
     options:
-      - Een direct kind van een grid element
-      - "Het element met display: grid waarop het raster wordt gedefinieerd"
-      - Een kolom in het grid
-      - Een HTML-element met class="grid"
+      - De map waarin een bestand staat
+      - Het deel achter de punt dat aangeeft wat voor soort bestand iets is
+      - De grootte van een bestand
+      - Een online opslagplaats
     correct: 1
-    explanation: "De container is het element waarop je display: grid toepast en grid-template-* definieert."
-
+    explanation: De extensie (zoals .html of .png) geeft het type bestand aan.
   - id: t2
-    question: Wat is het belangrijkste verschil tussen Flexbox en Grid?
+    question: Welk soort bestanden sla je beter NIET op via OneDrive?
     options:
-      - Flexbox is ouder dan Grid
-      - Flexbox werkt in één richting, Grid in twee richtingen (rijen én kolommen)
-      - Grid werkt alleen op desktop
-      - Flexbox kan geen gap gebruiken
-    correct: 1
-    explanation: "Flexbox = één dimensie. Grid = twee dimensies, ideaal voor pagina-layouts."
-
+      - Word-documenten
+      - Foto's
+      - Code
+      - Presentaties
+    correct: 2
+    explanation: Code zet je niet op OneDrive; daarvoor gebruik je Git.
   - id: t3
-    question: Welke property maakt een element een grid container?
+    question: Waarvoor gebruiken developers Git?
     options:
-      - "grid: on"
-      - "display: grid"
-      - "position: grid"
-      - "layout: grid"
+      - Om afbeeldingen te bewerken
+      - Om de verschillende versies van hun code te beheren
+      - Om e-mails te versturen
+      - Om mappen te verbergen
     correct: 1
-    explanation: "display: grid activeert CSS Grid op het element."
-
+    explanation: Met Git beheer je versies van je code.
   - id: t4
-    question: "Wat doet grid-template-columns: 1fr 200px?"
+    question: Wat is een repository?
     options:
-      - Twee rijen van 1fr en 200px
-      - Een flexibele kolom en een vaste kolom van 200px
-      - 200 kolommen
-      - Alleen padding instellen
-    correct: 1
-    explanation: 1fr neemt beschikbare ruimte, 200px is een vaste breedte.
-
+      - Een opslagplaats voor code
+      - Een Git-tool
+      - Een bestandsextensie
+      - Een e-mailadres
+    correct: 0
+    explanation: Repository betekent 'opslagplaats' voor code.
   - id: t5
-    question: Wat doet de gap property?
+    question: Wat is een fork van een repository?
     options:
-      - Ruimte tussen grid-items
-      - Ruimte binnen een grid-item
-      - De grootte van kolommen
-      - De kleur van de grid-lijnen
-    correct: 0
-    explanation: gap (of row-gap / column-gap) bepaalt de ruimte tussen items.
-
+      - Een back-up van je laptop
+      - Een eigen kopie van een bestaande repository waarop je kunt doorwerken
+      - Het verwijderen van een repository
+      - Een commit-titel
+    correct: 1
+    explanation: Een fork is jouw eigen kopie van een repository.
   - id: t6
-    question: Wat is grid-template-areas?
+    question: Wat betekent een repository clonen?
     options:
-      - Een lijst van HTML-klassen
-      - Een visuele manier om gebieden namen te geven met strings
-      - Een JavaScript functie
-      - Een media query
+      - De repository verwijderen
+      - De code van een repository naar je eigen laptop kopiëren
+      - De repository openbaar maken
+      - Een commit maken
     correct: 1
-    explanation: Met grid-template-areas teken je je layout met benoemde gebieden.
-
+    explanation: Clonen kopieert de online code naar je laptop.
   - id: t7
-    question: Hoe laat je een item over 2 kolommen spannen?
+    question: Wat is een commit?
     options:
-      - "width: 200%"
-      - "grid-column: 1 / 3 of grid-area met twee kolommen in template-areas"
-      - "float: left"
-      - "position: absolute"
-    correct: 1
-    explanation: grid-column of een area die twee kolom-namen beslaat in template-areas.
-
-  - id: t8
-    question: "Wat doet repeat(4, 1fr)?"
-    options:
-      - 4 rijen van 1fr
-      - 4 kolommen van gelijke flexibele breedte
-      - Herhaal 4 keer de animatie
-      - 4px gap
-    correct: 1
-    explanation: "repeat(4, 1fr) maakt 4 kolommen die de ruimte gelijk verdelen."
-
-  - id: t9
-    question: "Wat doet minmax(200px, 1fr)?"
-    options:
-      - Minimaal 200px, maximaal 1fr beschikbare ruimte
-      - Exact 200px
-      - Alleen op mobiel
-      - Verbergt het element
+      - Een moment waarop je je code opslaat zoals die op dat moment is
+      - Het verwijderen van de .git-folder
+      - Een soort bestandsextensie
+      - Een online repository
     correct: 0
-    explanation: minmax stelt een minimum en maximum in voor een track.
-
+    explanation: Een commit legt de stand van je code vast.
+  - id: t8
+    question: Wat doet een push?
+    options:
+      - De code van GitHub naar je laptop halen
+      - Je commit van je laptop naar de online repository sturen
+      - Een nieuwe repository maken
+      - Verborgen bestanden aanzetten
+    correct: 1
+    explanation: Een push stuurt je lokale commits naar de online repository.
+  - id: t9
+    question: Waarvoor dient de verborgen .git-folder?
+    options:
+      - Het bewaart je wachtwoord
+      - Het bevat de Git-informatie van je repository; zonder deze folder werkt Git niet
+      - Het is een back-up van je foto's
+      - Het is een tijdelijke map die je veilig kunt verwijderen
+    correct: 1
+    explanation: De .git-folder bevat de Git-informatie. Niet verwijderen of aanpassen.
   - id: t10
-    question: Wat is het verschil tussen auto-fit en auto-fill?
+    question: Waarom geef je een commit een logische titel?
     options:
-      - Geen verschil
-      - auto-fit klapt lege tracks in, auto-fill behoudt ze
-      - auto-fill werkt alleen in Firefox
-      - auto-fit is voor rijen, auto-fill voor kolommen
+      - Het is verplicht van GitHub
+      - Zodat jij en je teamgenoten weten welke aanpassingen er gemaakt zijn
+      - Anders werkt de push niet
+      - Om de repository sneller te maken
     correct: 1
-    explanation: "auto-fill vult met zoveel mogelijk kolommen; auto-fit laat items de ruimte vullen."
-
-  - id: t11
-    question: Waarom gebruik je geen floats voor pagina-layout?
-    options:
-      - Floats zijn deprecated
-      - Floats zijn bedoeld voor tekstomloop, niet voor structurele layouts
-      - Floats werken niet in Chrome
-      - Floats zijn trager dan Grid
-    correct: 1
-    explanation: "Floats zijn oorspronkelijk voor tekstomloop; Grid is gemaakt voor layouts."
-
-  - id: t12
-    question: Wat is een grid item?
-    options:
-      - De container zelf
-      - Een direct kind van de grid container
-      - Elk element op de pagina
-      - Alleen div-elementen
-    correct: 1
-    explanation: Alleen directe kinderen van de container worden grid items.
-
-  - id: t13
-    question: "Wat doet grid-area: header?"
-    options:
-      - Maakt een header-element aan
-      - Plaatst het item in het gebied met de naam 'header'
-      - Verbergt het item
-      - Stelt de hoogte in op header-grootte
-    correct: 1
-    explanation: grid-area koppelt een item aan een benoemd gebied uit grid-template-areas.
-
-  - id: t14
-    question: Hoe combineer je Grid met media queries?
-    options:
-      - Dat kan niet
-      - Je past grid-template-columns aan binnen @media regels
-      - Je vervangt Grid door Flexbox op mobiel
-      - Media queries werken alleen met floats
-    correct: 1
-    explanation: Binnen media queries pas je grid-properties aan voor verschillende schermen.
-
-  - id: t15
-    question: Wat betekent fr als eenheid?
-    options:
-      - Fixed ratio
-      - "Fraction — een deel van de beschikbare ruimte"
-      - Frame rate
-      - Full row
-    correct: 1
-    explanation: "fr staat voor fraction: een deel van de vrije ruimte in het grid."
+    explanation: Een duidelijke titel maakt later zichtbaar wat er veranderd is.
 ---

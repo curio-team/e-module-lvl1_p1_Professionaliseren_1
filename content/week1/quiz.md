@@ -1,83 +1,78 @@
 ---
 week: 1
-title: Tussentoets Week 1 — Pagina indelen
+title: Meetmoment Week 1 — Bestanden en mappen
 passScore: 70
 questions:
   - id: w1q1
-    question: Waarvoor gebruik je CSS Grid vooral?
+    question: Wat is een bestandsextensie?
     options:
-      - Tekst kleuren instellen
-      - Tweedimensionale pagina-layouts (rijen én kolommen)
-      - Animaties maken
-      - Alleen navigatiebalken
+      - De grootte van een bestand
+      - Het deel achter de punt in de bestandsnaam dat aangeeft wat voor soort bestand het is
+      - De map waarin een bestand staat
+      - De datum waarop een bestand gemaakt is
     correct: 1
-    explanation: Grid is bedoeld voor layouts in twee richtingen tegelijk.
+    explanation: De extensie (bijvoorbeeld .docx of .png) vertelt het apparaat wat voor soort bestand iets is.
   - id: w1q2
-    question: Wanneer kies je Flexbox in plaats van Grid?
+    question: Welke extensie hoort bij een webpagina?
     options:
-      - Voor een complete pagina-indeling
-      - Voor componenten in één richting (bijv. menu-items in een rij)
-      - Nooit, Grid is altijd beter
-      - Alleen op mobiel
-    correct: 1
-    explanation: Flexbox = één dimensie. Grid = pagina-layout.
+      - .docx
+      - .exe
+      - .html
+      - .png
+    correct: 2
+    explanation: .html is de extensie van een webpagina. .css bevat de opmaak daarvan.
   - id: w1q3
-    question: Welke property activeert CSS Grid op een element?
+    question: Wat is een mappenstructuur?
     options:
-      - "grid: on"
-      - "display: grid"
-      - "layout: grid"
-      - "position: grid"
+      - Een lijst van al je bestandsextensies
+      - Mappen die binnen andere mappen zitten en zo je bestanden ordenen
+      - Een back-up van je laptop
+      - Een programma om code te schrijven
     correct: 1
-    explanation: "display: grid maakt het element een grid container."
+    explanation: Een mappenstructuur is de opbouw van mappen (folders) binnen mappen waarmee je je bestanden ordent.
   - id: w1q4
-    question: "Wat doet grid-template-columns: 1fr 200px?"
+    question: Waarom is een duidelijke mappenstructuur handig?
     options:
-      - Twee rijen
-      - Een flexibele kolom en een vaste kolom van 200px
-      - 200 kolommen
-      - Alleen gap instellen
+      - Je laptop wordt er sneller van
+      - Je raakt gemaakt werk minder snel kwijt en kunt makkelijker back-ups maken
+      - Je hebt dan geen OneDrive meer nodig
+      - Bestanden krijgen er een andere extensie door
     correct: 1
-    explanation: 1fr deelt vrije ruimte, 200px is een vaste breedte.
+    explanation: Een nette structuur zorgt dat je werk terugvindt en niet kwijtraakt.
   - id: w1q5
-    question: Wat is een grid item?
+    question: Wat is OneDrive?
     options:
-      - "Het element met display: grid"
-      - Een direct kind van de grid container
-      - Elk element op de pagina
-      - Alleen een div
+      - Een tekstverwerker
+      - Een plaats om bestanden en folders op het internet op te slaan
+      - Een programmeertaal
+      - Een type bestandsextensie
     correct: 1
-    explanation: Alleen directe kinderen van de container worden grid items.
+    explanation: OneDrive slaat je bestanden op het internet op, zodat je ze niet kwijtraakt als je laptop kapotgaat.
   - id: w1q6
-    question: Welk CSS-snippet maakt twee gelijke kolommen?
-    preview:
-      css: ".demo { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; } .demo >
-        div { padding: 12px; background: #71717a; color: white; text-align:
-        center; }"
-      html: <div class="demo"><div>1</div><div>2</div></div>
+    question: Welke bestanden sla je beter NIET op via OneDrive?
     options:
-      - "display: flex;"
-      - "display: grid; grid-template-columns: 1fr 1fr;"
-      - "float: left;"
-      - "grid-template-rows: 2;"
-    correct: 1
-    explanation: grid-template-columns met twee 1fr-kolommen deelt de ruimte gelijk.
+      - Word-documenten
+      - Foto's
+      - Code
+      - Presentaties
+    correct: 2
+    explanation: Code zet je niet op OneDrive — sommige applicaties werken dan niet goed. Daarvoor gebruik je Git.
   - id: w1q7
-    question: Waarom gebruik je geen floats voor pagina-layout?
+    question: Hoe maak je in de File Explorer een nieuwe folder aan?
     options:
-      - Floats zijn deprecated
-      - Floats zijn voor tekstomloop, niet voor structurele layouts
-      - Floats werken niet in Chrome
-      - Floats zijn trager
+      - Door op de spatiebalk te drukken
+      - Door met de rechtermuisknop te klikken en 'Nieuwe map' te kiezen
+      - Door het bestand te hernoemen
+      - Door dubbel te klikken op het bureaublad
     correct: 1
-    explanation: Grid is gemaakt voor betrouwbare pagina-indelingen.
+    explanation: Met de rechtermuisknop klikken geeft je de optie om een nieuwe map (folder) aan te maken.
   - id: w1q8
-    question: Wat doet de gap property?
+    question: Waar zet je in Windows de optie aan om bestandsextensies te zien?
     options:
-      - Padding binnen items
-      - Ruimte tussen grid-items
-      - Buitenmarge van de body
-      - Border-radius
+      - In het Configuratiescherm onder Geluid
+      - Onder de tab View in de File Explorer (File name extensions)
+      - In de instellingen van je browser
+      - In het Start-menu
     correct: 1
-    explanation: gap bepaalt de ruimte tussen rijen en kolommen.
+    explanation: Onder de View-tab van de File Explorer zet je 'File name extensions' aan.
 ---

@@ -1,40 +1,34 @@
 ---
 week: 1
-title: GridCafé — je eerste klantpagina
+title: Jouw mappenstructuur voor school
 subtitle: Inleveropdracht Week 1
-client: GridCafé Rotterdam
-maxPoints: 11
+maxPoints: 10
 deliverables:
-  - index.html met semantische HTML (header, nav, main, aside, footer)
-  - styles.css met je grid-layout
-  - Screenshot van de pagina in de browser
+  - Een screenshot van je 'school'-folder met daarin een onderverdeling per vak/project
+  - Een screenshot waaruit blijkt dat de structuur (ook) op OneDrive staat
+  - Een korte uitleg (paar zinnen) van je gekozen indeling
 criteria:
   - id: w1h1
-    text: "De layout gebruikt display: grid op de hoofdcontainer"
+    text: Er is een hoofdfolder 'school' aangemaakt
     points: 2
   - id: w1h2
-    text: Er zijn minstens twee kolommen gedefinieerd (bijv. 1fr en een vaste
-      breedte)
-    points: 2
-  - id: w1h3
-    text: gap is toegepast voor ruimte tussen onderdelen
-    points: 1
-  - id: w1h4
-    text: Header, nav, main, sidebar en footer zijn allemaal zichtbaar en op de
-      juiste plek
+    text: Binnen 'school' staat een aparte folder per vak en/of project
     points: 3
-  - id: w1h5
-    text: "Geen floats of position: absolute voor de layout"
+  - id: w1h3
+    text: De mappen hebben duidelijke, logische namen
     points: 2
-  - id: w1h6
-    text: Code is netjes ingesprongen en leesbaar
+  - id: w1h4
+    text: De mappenstructuur staat (ook) op OneDrive
+    points: 2
+  - id: w1h5
+    text: De korte uitleg beschrijft waarom de indeling logisch is
     points: 1
 tips:
-  - Begin met de HTML-structuur voordat je CSS schrijft.
-  - Test je layout door tijdelijk een achtergrondkleur per onderdeel te geven.
-  - Kijk terug naar oefening 8 als je vastloopt.
+  - Bedenk eerst welke vakken en projecten je hebt voordat je mappen aanmaakt.
+  - Zet bestandsextensies aan, dan zie je beter wat er in je mappen staat.
+  - Maak je screenshots met de Snipping Tool (Windows-toets + Shift + S).
 ---
 
-GridCafé is een nieuwe koffiebar die binnenkort opent. De eigenaar, Samira, wil een simpele one-pager online zetten. Ze heeft al tekst en foto's, maar de layout klopt nog niet. Jij bent de developer die de pagina-indeling bouwt — alleen met CSS Grid, geen floats of positionering.
+Je hebt deze week geleerd hoe je je schoolwerk overzichtelijk bewaart. Nu laat je zien dat je dat zelf kunt. Een nette mappenstructuur is de eerste stap in versiebeheer: je weet altijd waar je werk staat en raakt niets kwijt.
 
-Bouw een HTML-pagina met een complete layout: logo/header, navigatie, hoofdinhoud (welkomsttekst + foto), sidebar (openingstijden + adres) en footer. Alles moet netjes op zijn plek staan met CSS Grid.
+Maak een mappenstructuur voor je schoolwerk met een hoofdfolder `school` en daarin een aparte folder per vak en/of project. Zorg dat de structuur (ook) op je OneDrive staat. Maak hier screenshots van en schrijf een korte uitleg van je indeling. Lever je werk in via **Itslearning**, waar je docent het nakijkt en je feedback geeft.

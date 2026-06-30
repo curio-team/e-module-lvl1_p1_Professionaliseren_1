@@ -1,62 +1,85 @@
 ---
 week: 4
-title: Tussentoets Week 4 — Eindproject
+title: Meetmoment Week 4 — Samenwerken via GitHub
 passScore: 70
 questions:
   - id: w4q1
-    question: Wat is het doel van het eindproject?
+    question: Wat is een collaborator op GitHub?
     options:
-      - Alleen theorie herhalen
-      - Zelfstandig een realistische layout bouwen met Grid
-      - JavaScript leren
-      - Een toets maken
+      - Iemand die een eigen kopie (fork) van jouw repository maakt
+      - Iemand die schrijfrechten heeft op jouw repository en daarin kan pushen
+      - Een automatisch gegenereerde back-up van je code
+      - Een branch in je repository
     correct: 1
-    explanation: Week 4 is de praktische toepassing van alles wat je hebt geleerd.
+    explanation: Een collaborator heeft schrijfrechten op jouw repository en werkt direct in dezelfde codebase — anders dan bij een fork.
+
   - id: w4q2
-    question: Wanneer combineer je Grid met Flexbox in een eindproject?
+    question: Waar voeg je een collaborator toe aan een GitHub-repository?
     options:
-      - Nooit
-      - Grid voor de pagina-layout, Flexbox voor componenten (bijv. inhoud in
-        kaarten)
-      - Altijd alleen Flexbox
-      - Alleen op mobiel
+      - Code → Branches
+      - Settings → Collaborators → Add people
+      - Issues → Assignees
+      - Profile → Access
     correct: 1
-    explanation: Grid = grote indeling, Flexbox = kleine onderdelen binnen componenten.
+    explanation: Via Settings → Collaborators → Add people stuur je een uitnodiging naar de GitHub-gebruiker.
+
   - id: w4q3
-    question: Wat hoort NIET bij een goede eindproject-layout?
+    question: Wat is de juiste volgorde van de samenwerkworkflow?
     options:
-      - "display: grid voor de hoofdstructuur"
-      - "float: left voor de sidebar"
-      - grid-template-areas of grid-column
-      - Responsive ontwerp
+      - Commit → pull → push → aanpassen
+      - Pull → aanpassen → commit → push
+      - Push → aanpassen → pull → commit
+      - Aanpassen → push → commit → pull
     correct: 1
-    explanation: Gebruik Grid voor structurele layout, geen floats.
+    explanation: Altijd eerst pullen zodat je de nieuwste versie hebt, dan aanpassen, committen en pushen.
+
   - id: w4q4
-    question: Welke layout past bij een dashboard-eindproject?
+    question: Wat doet een pull?
     options:
-      - Alleen één kolom tekst
-      - Header, menu, content-gebied en statistiek-kaarten in een grid
-      - Een tabel voor de hele pagina
-      - "position: absolute overal"
+      - Je lokale commits naar GitHub sturen
+      - De nieuwste commits van GitHub naar je laptop halen
+      - Een nieuwe repository aanmaken
+      - Een collaborator uitnodigen
     correct: 1
-    explanation: Een dashboard gebruikt meerdere grid-gebieden voor verschillende secties.
+    explanation: Een pull haalt de laatste wijzigingen van de online repository naar jouw lokale kopie.
+
   - id: w4q5
-    question: "Voor een portfolio met 4 projecten op desktop: welke aanpak is het beste?"
+    question: Wanneer ontstaat een merge conflict?
     options:
-      - "grid-template-columns: repeat(4, 1fr) met media queries voor kleinere
-        schermen"
-      - Vier aparte HTML-pagina's
-      - Alleen inline styles
-      - Eén kolom op alle schermen
-    correct: 0
-    explanation: Responsive grid met breakpoints is de juiste aanpak.
-  - id: w4q6
-    question: Wat is een optionele maar waardevolle extra op het eindproject?
-    options:
-      - Tables voor layout
-      - Hover-effecten en donkere modus
-      - Geen CSS gebruiken
-      - Alleen afbeeldingen zonder HTML
+      - Als je een bestand verwijdert
+      - Als twee mensen dezelfde regel in hetzelfde bestand hebben aangepast
+      - Als je vergeet te committen
+      - Als je repository private is
     correct: 1
-    explanation: Hover en dark mode laten zien dat je verder kijkt dan de basis-layout.
+    explanation: Een merge conflict ontstaat als Git twee verschillende versies van dezelfde regel ziet en niet automatisch kan kiezen welke hij moet bewaren.
+
+  - id: w4q6
+    question: Hoe markeert Git een merge conflict in een bestand?
+    options:
+      - Met een rood kruis in de bestandsnaam
+      - Met speciale markers zoals <<<<<<<, ======= en >>>>>>>
+      - Door het bestand te verwijderen
+      - Door een e-mail te sturen
+    correct: 1
+    explanation: Git voegt conflictmarkers toe aan het bestand. Alles tussen <<<<<<< en ======= is jouw versie; tussen ======= en >>>>>>> is de versie van GitHub.
+
+  - id: w4q7
+    question: Wat moet je doen nadat je een merge conflict hebt opgelost in het bestand?
+    options:
+      - De repository opnieuw clonen
+      - De conflictmarkers verwijderen, opslaan, committen en pushen
+      - Alleen opslaan — Git regelt de rest automatisch
+      - Een nieuwe branch aanmaken
+    correct: 1
+    explanation: Na het oplossen verwijder je de markers, sla je het bestand op en maak je een nieuwe commit. Daarna push je naar GitHub.
+
+  - id: w4q8
+    question: Wat is het verschil tussen een fork en een collaborator?
+    options:
+      - Er is geen verschil
+      - Bij een fork werk je in een eigen kopie; bij een collaborator werk je in dezelfde repository
+      - Een fork geeft schrijfrechten; een collaborator heeft alleen leesrechten
+      - Een collaborator maakt altijd een fork aan
+    correct: 1
+    explanation: Bij een fork heb je een eigen, losgekoppelde kopie. Als collaborator werk je direct in de originele repository van de eigenaar.
 ---

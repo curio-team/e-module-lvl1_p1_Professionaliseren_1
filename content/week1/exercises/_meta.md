@@ -1,6 +1,5 @@
 ---
 week: 1
-title: Week 1 — Pagina indelen
+title: Week 1 — Bestanden en mappen
 color: indigo
 ---
-

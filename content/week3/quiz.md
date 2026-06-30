@@ -1,85 +1,78 @@
 ---
 week: 3
-title: Tussentoets Week 3 — Responsieve grids
+title: Meetmoment Week 3 — Code beheren via Git
 passScore: 70
 questions:
   - id: w3q1
-    question: Wat doet repeat(4, 1fr)?
+    question: Wat is een commit?
     options:
-      - 4 rijen
-      - 4 kolommen die de ruimte gelijk verdelen
-      - Herhaal de animatie 4 keer
-      - 4px gap
+      - Het verwijderen van een repository
+      - Een moment waarop je je code opslaat zoals die op dat moment is
+      - Een kopie van GitHub op je laptop
+      - Een bestandsextensie
     correct: 1
-    explanation: repeat(4, 1fr) maakt vier gelijke kolommen.
+    explanation: Een commit legt de stand van je code op dat moment vast.
   - id: w3q2
-    question: Wat doet minmax(200px, 1fr)?
+    question: Waarom geef je een commit een logische titel?
     options:
-      - Exact 200px breed
-      - Minimaal 200px, maximaal een deel van de vrije ruimte
-      - Alleen op desktop
-      - Verbergt kleine schermen
+      - Het is verplicht van GitHub
+      - Zodat jij en je teamgenoten weten welke aanpassingen er zijn gemaakt
+      - Anders werkt de push niet
+      - Om de repository sneller te maken
     correct: 1
-    explanation: minmax stelt een minimum en maximum in voor een track.
+    explanation: Een duidelijke titel maakt later voor iedereen zichtbaar wat er veranderd is.
   - id: w3q3
-    question: Hoeveel kolommen heeft dit grid?
-    preview:
-      css: ".demo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
-        .demo > div { padding: 10px; background: #52525b; color: white;
-        text-align: center; font-size: 12px; }"
-      html: <div class="demo"><div>1</div><div>2</div><div>3</div></div>
+    question: Wat doet een push?
     options:
-      - "2"
-      - "3"
-      - "4"
-      - "6"
+      - De code van GitHub naar je laptop halen
+      - Je commit (en de code erin) van je laptop naar de online repository sturen
+      - Een nieuwe repository maken
+      - Verborgen bestanden aanzetten
     correct: 1
-    explanation: repeat(3, 1fr) definieert 3 kolommen.
+    explanation: Met een push stuur je je lokale commits naar de online repository.
   - id: w3q4
-    question: Wat is het verschil tussen auto-fit en auto-fill?
+    question: Waar staat een commit eerst opgeslagen?
     options:
-      - Geen verschil
-      - auto-fit klapt lege tracks in, auto-fill behoudt ze
-      - auto-fill is alleen voor mobiel
-      - auto-fit is voor rijen
+      - Meteen online op GitHub
+      - Op je eigen laptop, totdat je pusht
+      - Op OneDrive
+      - In de .git-folder van een andere repository
     correct: 1
-    explanation: auto-fit laat items de beschikbare ruimte vullen.
+    explanation: Een commit staat eerst lokaal; pas na een push staat de code online.
   - id: w3q5
-    question: Welke code maakt 2 kolommen op tablet?
+    question: Waarvoor dient de verborgen .git-folder?
     options:
-      - "@media (max-width: 900px) { .grid { grid-template-columns: repeat(2,
-        1fr); } }"
-      - ".grid { columns: 2; }"
-      - "@media (max-width: 900px) { .grid { display: block; } }"
-      - "grid-template-columns: tablet;"
-    correct: 0
-    explanation: Media queries met aangepaste grid-template-columns is de standaard aanpak.
+      - Het bewaart je wachtwoord
+      - Het bevat informatie over je repository; zonder deze folder werkt Git niet
+      - Het is een back-up van je foto's
+      - Het is een tijdelijke map die je kunt verwijderen
+    correct: 1
+    explanation: De .git-folder bevat de Git-informatie van je repository. Niet verwijderen of aanpassen.
   - id: w3q6
-    question: Welk patroon hoort bij een webshop op mobiel?
+    question: Welke visibility kies je voor de muziekbibliotheek-repository in deze opdracht?
     options:
-      - 4 kolommen op alle schermen
-      - 4 kolommen desktop → 2 tablet → 1 mobiel
-      - Alleen Flexbox op mobiel
-      - Grid uitzetten op mobiel
+      - Public
+      - Private
+      - Hidden
+      - Shared
     correct: 1
-    explanation: Breakpoints met steeds minder kolommen is het klassieke responsive
-      grid-patroon.
+    explanation: Private — dan kan niet iedereen erbij. Dat is wat we hier willen.
   - id: w3q7
-    question: Welk CSS-snippet past het beste bij automatisch wrappende productkaarten?
+    question: Hoe bekijk je je commitgeschiedenis op GitHub?
     options:
-      - "grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));"
-      - "grid-template-columns: 250px;"
-      - "float: left; width: 25%;"
-      - "display: flex; flex-wrap: nowrap;"
-    correct: 0
-    explanation: auto-fit + minmax is populair voor flexibele kaartgrids.
-  - id: w3q8
-    question: Waarom combineer je media queries met Grid?
-    options:
-      - Dat kan niet
-      - Om het aantal kolommen aan te passen per schermbreedte
-      - Alleen voor kleuren
-      - Om Grid te vervangen door tables
+      - Door op 'Settings' te klikken
+      - Door in je repository op 'commits' te klikken
+      - Door de repository te forken
+      - Door verborgen bestanden aan te zetten
     correct: 1
-    explanation: Responsive layout = andere grid-definitie per breakpoint.
+    explanation: Via de 'commits'-knop in je repository zie je de hele geschiedenis.
+  - id: w3q8
+    question: Wat betekent een groene box in de weergave van een commit?
+    options:
+      - Dat er code is verwijderd
+      - Dat er code is toegevoegd
+      - Dat de commit is mislukt
+      - Dat de repository private is
+    correct: 1
+    explanation: Groen = toegevoegde code. Rood = verwijderde code.
 ---
